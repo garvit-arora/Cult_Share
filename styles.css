@@ -142,12 +142,13 @@ body{
     margin-bottom: 8px;
 }
 .box1{
-    background-color: aqua;
+    background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+        box-shadow: 3px 1px;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -156,12 +157,13 @@ body{
 }
 
 .box2{
-     background-color: lightpink;
+     background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    box-shadow: 3px 1px;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -169,12 +171,13 @@ body{
 
 }
 .box3{
-     background-color: greenyellow;
+     background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    box-shadow: 3px 1px;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -182,12 +185,13 @@ body{
 
 }
 .box4{
-     background-color: yellow;
+     background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    box-shadow: 3px 1px;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -226,11 +230,15 @@ body{
   width: 90%;
   margin: auto;
 }
+.keyfeature{
+    background-color: rgb(255, 255, 197);
+}
 .newfeature{
     font-size: 80px;
     text-align: center;
     margin: 20px 0px;
     padding: 0px;
+
 }
 .newfeature h1{
     background: linear-gradient(red, blue);
