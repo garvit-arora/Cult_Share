@@ -2,7 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-family: 'ibm-plex-sans', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .caprasimo-regular {
   font-family: "Caprasimo", serif;
@@ -457,8 +457,31 @@ body.loginbody {
     gap: 20px;
 }
 
+/* #back-button{
+  width: 30px;
+  border: none;
 
-.pricingbox1{
+} */
+#back-button {
+  position: fixed; 
+  top: 20px;
+  left: 20px;
+  width: 40px;                 
+  height: 40px;
+  cursor: pointer;
+  z-index: 999;               
+  /* filter: brightness(0) invert(1);  */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  /* opacity: 0.8; */
+}
+
+#back-button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  /* filter: brightness(1.2); */
+}
+
+.pricingbox {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -468,54 +491,12 @@ body.loginbody {
     color: black;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     height: 260px;
-}
-.pricingbox2{
-    width: 400px;
-    padding: 30px 40px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid yellow;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    color: black;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    height: 260px;
-}
-.pricingbox3{
-    width: 400px;
-    padding: 30px 40px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid yellow;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    color: black;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    height: 260px;
-}
-.pricingbox4{
-    width: 400px;
-    padding: 30px 40px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid yellow;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    color: black;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    height: 260px;
-}
-.pricingbox5{
-    width: 400px;
-    padding: 30px 40px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid yellow;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    color: black;
-    box-shadow: 0 8px 33px rgba(0, 0, 0, 0.37);
-    height: 260px;
+    text-align: center;
 }
 
 body.pricing{
-    padding: 0;
+    padding: 20px;
+    padding-top: 50px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -525,12 +506,10 @@ body.pricing{
     flex-wrap: wrap;
     margin-top: 20px;
 }
-.pricingbox1,.pricingbox2,.pricingbox3,.pricingbox4,.pricingbox5{
-    text-align: center;
-}
 .buybtn{
-    background-color: blue;
-    border: 3px solid red;
+    background-color: rgb(15, 15, 91);
+    color: white;
+    border: 2px solid red;
     width: 200px;
     height: 40px;
     border-radius: 40px;
@@ -538,7 +517,6 @@ body.pricing{
     transition: transform 0.4s ease;
     font-weight: bold;
     font-size: 20px;
-    
     
 }
 .buybtn:hover{
