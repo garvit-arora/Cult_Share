@@ -225,40 +225,99 @@ footer{
 
 /* Login */
 
+body.loginbody {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* background:url(assets/video.mp4); */
+    /* background: no-repeat; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
 .login {
-    
-    position: relative;
-    left: 20px;
-    margin: 23px;
-    padding: 23px;
-    font-size: 20px;
-    width: 373px;
-    height: 400px;
-    background-color: red;
-    border: 2px solid black;
+    width: 400px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid yellow;
     border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
 
+.login h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
-.registerlink{
-    color: black;
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid red;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.login button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: #1d0982;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+                rgb(246, 84, 174) 0px 0px 0px 4px,
+                rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: transform 0.3s ease;
+}
+
+.login button:hover {
+    transform: scale(1.05);
+}
+
+.login .small {
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.registerlink {
+    color: white;
     text-decoration: none;
-    
+    margin-left: 6px;
 }
-.registerlink:hover{
+
+.registerlink:hover {
     text-decoration: underline;
-    transition: 0.5s ease-in-out;
-    
+    transition: 0.3s ease-in-out;
 }
-.registerlink::after{
-    color: pink;
-}
-.registerlink:active{
+
+.registerlink:active {
     color: aqua;
 }
-.login p{
-    display: inline;
-}
-.login label{
-    font-size: 40px;
+.backgroundvid{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    min-width: 100vw; 
+    min-height: 100vh; 
+    width: auto; 
+    height: auto; 
+    z-index: -1; /* Send video behind content */ 
+    transform: translate(-50%, -50%); /* Centering */ 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    object-fit: contain;
 }
