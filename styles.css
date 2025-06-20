@@ -14,10 +14,13 @@ body{
     list-style-type: none;
     display: flex;
     gap: 20px;
+    /* position: fixed; */
+    /* background-color: white; */
 }
 .list-item{
-    right: -608px;
+    right: -375px;
     position: relative;
+    /* background-color: white; */
     cursor: pointer;
     color: var(--text-light);
     font-weight: 500;
@@ -25,7 +28,7 @@ body{
 
 }
 .mainbtn{
-    right: -614px;
+    right: -388px;
     top: 3px;
     position: relative;
     background-color: blue;
