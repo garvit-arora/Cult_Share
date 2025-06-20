@@ -1,3 +1,10 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    /* font-family:'Caprasimo'; */
+    font-family: 'ibm-plex-sans', sans-serif;
+    overflow-x: hidden;
+}
 .caprasimo-regular {
   font-family: "Caprasimo", serif;
   font-weight: 400;
@@ -8,20 +15,29 @@
     display: flex;
     gap: 20px;
 }
-body{
-    padding: 0px;
-    margin: 0px;
-    /* font-family:'Caprasimo'; */
-    font-family: 'ibm-plex-sans', sans-serif;
-}
 .list-item{
-    right: -644px;
+    right: -608px;
     position: relative;
     cursor: pointer;
     color: var(--text-light);
     font-weight: 500;
     transition: color 0.3s ease;
 
+}
+.mainbtn{
+    right: -614px;
+    top: 3px;
+    position: relative;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 101px;
+    height: 40px;
+    transition: transform 1.5s ease;
+    cursor: pointer;
+}
+.mainbtn:hover{
+    transform: scale(1.1);
 }
 
 .list-item:hover {
@@ -49,8 +65,8 @@ body{
 
 
 .section1{
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    color: white;
+    /* background-color: #e1dc71; */
+    color: black;
     width: 100vw;
     
 }
