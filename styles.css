@@ -154,6 +154,7 @@ body{
     animation-range: entry 0% cover 40%;
 
 }
+
 .box2{
      background-color: lightpink;
     width: 220px;
@@ -386,3 +387,13 @@ body.loginbody {
     overflow-x: hidden;
     object-fit: contain;
 }
+.mail{
+    display: flex;
+    gap: 20px;
+}
+.password{
+    display: flex;
+    gap: 20px;
+}
+
+
