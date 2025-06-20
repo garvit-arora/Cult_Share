@@ -144,10 +144,10 @@ body{
 .box1{
     background-color: aqua;
     width: 220px;
-    height: 202px;
+    height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 3px solid black;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -158,10 +158,10 @@ body{
 .box2{
      background-color: lightpink;
     width: 220px;
-    height: 202px;
+    height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 3px solid black;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -171,10 +171,10 @@ body{
 .box3{
      background-color: greenyellow;
     width: 220px;
-    height: 202px;
+    height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 3px solid black;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -184,10 +184,10 @@ body{
 .box4{
      background-color: yellow;
     width: 220px;
-    height: 202px;
+    height: 203px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 3px solid black;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -248,7 +248,7 @@ body{
 }
 
 #why-us li {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   font-size: 1.05rem;
   position: relative;
   padding-left: 24px;
@@ -289,7 +289,7 @@ footer{
 .footer-bottom {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--text-muted);
 }
 
@@ -308,7 +308,7 @@ body.loginbody {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid yellow;
+    border: 3px solid yellow;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     color: white;
@@ -397,3 +397,89 @@ body.loginbody {
 }
 
 
+.pricingbox1{
+    width: 400px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid yellow;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    height: 260px;
+}
+.pricingbox2{
+    width: 400px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid yellow;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    height: 260px;
+}
+.pricingbox3{
+    width: 400px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid yellow;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    height: 260px;
+}
+.pricingbox4{
+    width: 400px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid yellow;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    height: 260px;
+}
+.pricingbox5{
+    width: 400px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid yellow;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: black;
+    box-shadow: 0 8px 33px rgba(0, 0, 0, 0.37);
+    height: 260px;
+}
+
+body.pricing{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    overflow: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.pricingbox1,.pricingbox2,.pricingbox3,.pricingbox4,.pricingbox5{
+    text-align: center;
+}
+.buybtn{
+    background-color: blue;
+    border: 3px solid red;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+}
+.buybtn:hover{
+    transform: scale(1.2);
+}
