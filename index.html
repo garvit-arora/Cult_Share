@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>random</title>
+    <title>Cult Share</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/IBM+Plex+Sans">
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Caprasimo&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=National+Park:wght@200..800&family=Paprika&family=Permanent+Marker&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Caprasimo&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=National+Park:wght@200..800&family=Paprika&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -17,13 +20,25 @@
         <header>
             <nav>
                 <li class="navbar">
-                    <ul class="list-item">Home</ul>
-                    <ul class="list-item">How it Works</ul>
-                    <ul class="list-item">Skills Arena</ul>
-                    <ul class="list-item">Become a Mentor</ul>
-                    <ul class="list-item">Pricing</ul>
-                    <ul class="list-item">FAQ's</ul>
-
+                    <img src="assets/logo.png" alt="logo" width="120px" style="top: -33px; position: relative;">
+                    <a href="https://cultshare.netlify.app/">
+                        <ul class="active list-item">Home</ul>
+                    </a>
+                    <a href="#why-us">
+                        <ul class="list-item">Why Cult Share ?</ul>
+                    </a>
+                    <a href="login.html">
+                        <ul class="list-item">Skills Arena</ul>
+                    </a>
+                    <a href="loginmentor.html">
+                        <ul class="list-item">Become a Mentor</ul>
+                    </a>
+                    <a href="pricing.html">
+                        <ul class="list-item">Pricing</ul>
+                    </a>
+                    <a href="#faqs">
+                        <ul class="list-item">FAQ's</ul>
+                    </a>
                 </li>
             </nav>
         </header>
@@ -31,99 +46,97 @@
 
     <main>
         <div class="top">
-        <div class="section1">
-            <h1>Unlock Skills.</h1>
-            <h2>Swap Cultures.</h2>
-            <h3>Empower Each Other...</h3>
-            <p>SkillSwap connects learners and teachers in your local community to exchange knowledge — one skill at a time, no money needed.</p>
-            <button class="startbtn">Start Learning Today</button>
+            <div class="section1">
+                <h1>Unlock Skills.</h1>
+                <h2>Swap Cultures.</h2>
+                <h3>Empower Each Other...</h3>
+                <button class="startbtn" onclick="loginpage()">Start Learning Today</button>
+            </div>
+            <div class="imageinright">
+                <img src="assets/img.png" width="500px" alt="main image">
+            </div>
         </div>
-        <div class="imageinright">
-            <img src="assets/img.png" width="500px" alt="main image">
+        <div class="newfeature">
+            <h1 class="featuretext">KEY FEATURES</h1>
         </div>
-        </div>
-
-        <div id="features" class = "section">
-            <h2>Key Features</h2>
+        <div id="features" class="section">
             <div class="feature-content">
-                <img src="/assets/img1.jpg" alt="feature image">
-
                 <div class="feature-grid">
-                    <p id = "feature-items"><span id="feature-heading">🎮 Arcade-Style Matching</span></br> Find your perfect match through a fun, gamified interface.</p>
-                    <p id = "feature-items"><span id="feature-heading">🤝 Barter System</span></br>Trade skills directly — no money involved, just value exchanged.</p>
-                    <p id = "feature-items"><span id="feature-heading">🔍 Skill Matching</span></br>Suggestions based on your interests and location.</p>
-                    <p id = "feature-items"><span id="feature-heading">💬 Real-time Scheduling</span></br> Chat and schedule sessions instantly inside the platform.</p>
-                    <p id = "feature-items"><span id="feature-heading">♿ Fully Inclusive</span></br> Accessible design for all abilities and backgrounds.</p>
+                    <div class="feature-item box1"><span class="feature-heading">
+                            <h2>🤝 Barter System</h2>
+                        </span><br> Trade skills directly — no money involved, just value exchanged.</div>
+                    <div class="feature-item box2"><span class="feature-heading">
+                            <h2> 🔍 Skill Matching</h2>
+                        </span><br>Suggestions based on your interests and location.</div>
+                    <div class="feature-item box3"><span class="feature-heading">
+                            <h2>💬 Real-time Scheduling</h2>
+                        </span><br>Chat and schedule sessions instantly inside the platform.</div>
+                    <div class="feature-item box4"><span class="feature-heading">
+                            <h2>♿ Fully Inclusive</h2>
+                        </span><br>Accessible design for all abilities and backgrounds.</div>
                 </div>
             </div>
         </div>
 
-        <div id="why-us" class = "section">
+        <div id="why-us" class="section">
             <h2>Why SkillSwap?</h2>
-            <p>In a world flooded with online content, SkillSwap brings human connection back into learning. Whether you're a baker wanting to learn web design, or a coder hoping to master watercolor art — this is the place to meet, match, and grow.</p>
+            <p>In a world flooded with online content, SkillSwap brings human connection back into learning. Whether
+                you're a baker wanting to learn web design, or a coder hoping to master watercolor art — this is the
+                place to meet, match, and grow.</p>
             <ul>
                 <li>✔️ Localized learning, global impact</li>
                 <li>✔️ Zero-cost learning opportunities</li>
                 <li>✔️ Skill-based credit system with flexible earning options</li>
                 <li>✔️ Fun, friendly, and safe environment for all ages</li>
             </ul>
-
         </div>
-       
-
-
     </main>
 
-    <footer>       
-
+    <footer>
         <div class="footer-container">
-
-            <div class = "footer-content">
+            <div class="footer-content">
                 <h3>About SkillSwap</h3>
-            <ul>
-                <li><a href="#about">Who We Are</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Blog (Coming Soon)</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#about">Who We Are</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Blog (Coming Soon)</a></li>
+                </ul>
             </div>
 
-             <div class = "footer-content">
-                
-            <h3>Explore</h3>
-            <ul>
-                <li><a href="#features">Key Features</a></li>
-                <li><a href="#enroll">Become a Mentor</a></li>
-                <li><a href="#pricing">Pricing & Credits</a></li>
-                <li><a href="#faq">FAQs</a></li>
-            </ul>
+            <div class="footer-content">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#features">Key Features</a></li>
+                    <li><a href="#enroll">Become a Mentor</a></li>
+                    <li><a href="#pricing">Pricing & Credits</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
             </div>
 
-             <div class = "footer-content">
+            <div class="footer-content">
                 <h3>Connect</h3>
-            <ul>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#">Partner with Us</a></li>
-                <li><a href="#">Send Feedback</a></li>
-                <li>
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Twitter</a>
-                </li>
-            </ul>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Partner with Us</a></li>
+                    <li><a href="#">Send Feedback</a></li>
+                    <li>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </li>
+                </ul>
             </div>
-            
-            <div class = "footer-content">
-               <h3>Legal</h3>
-               <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Code of Conduct</a></li>
-            </ul>  
+
+            <div class="footer-content">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Code of Conduct</a></li>
+                </ul>
             </div>
-           
-            
         </div>
 
         <div class="newsletter">
@@ -134,10 +147,10 @@
 
         <div class="footer-bottom">
             <p>© 2025 SkillSwap. All Rights Reserved.</p>
-            <p>“You learn from the world, the world learns from you.”</p>
+            <p>"You learn from the world, the world learns from you."</p>
         </div>
-
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
