@@ -72,6 +72,12 @@ body{
     margin-top: 30px;
     border-radius: 30px;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.section1 button:hover{
+  background-color: #5c7f87;
 }
 .section1 h2{
     font-size: 60px;
@@ -198,6 +204,7 @@ body{
   border-radius: 16px;
   width: 90%;
   margin: auto;
+  margin-bottom: 40px;
 }
 .newfeature{
     font-size: 80px;
@@ -233,6 +240,35 @@ body{
   color: var(--accent);
 }
 
+
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item{
+  background-color: #5c7f87;
+  border-left: 5px solid #0a0d3f;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item[open]{
+  transform: scale(1.01);
+}
+
+.faq-item p{
+  font-weight: bold;
+  /* font-size: 18px; */
+}
+
+
 footer{
     padding: 20px 70px;
     background-color: #0a0d3f;
@@ -258,6 +294,31 @@ footer{
     text-decoration: none;
     color:rgb(172, 172, 224);
 }
+
+
+.newsletter input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--accent);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #3b36c6;
+}
+
 
 .footer-bottom {
     text-align: center;
