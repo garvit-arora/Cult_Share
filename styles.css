@@ -1,20 +1,23 @@
-body{
+body {
     padding: 0px;
     margin: 0px;
     font-family: 'ibm-plex-sans', sans-serif;
     overflow-x: hidden;
 }
+
 .caprasimo-regular {
-  font-family: "Caprasimo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.navbar{
+
+.navbar {
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
-.list-item{
+
+.list-item {
     right: -456px;
     position: relative;
     cursor: pointer;
@@ -24,10 +27,10 @@ body{
 }
 
 .list-item:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
 
-.top{
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,30 +41,33 @@ body{
 }
 
 .imageinright img {
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .imageinright img:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-.section1{
+.section1 {
     color: black;
     width: 100vw;
 }
-.feature1{
-    background: linear-gradient(to right, aqua,green);
+
+.feature1 {
+    background: linear-gradient(to right, aqua, green);
     width: 100px;
     height: 100px;
     border-radius: 10px;
 }
-.section1 h1{
+
+.section1 h1 {
     padding: 0px;
     margin: 15px 25px;
 }
-.section1 button{
+
+.section1 button {
     background-color: black;
     color: white;
     padding: 14px 30px;
@@ -76,45 +82,49 @@ body{
     transition: background-color 0.3s ease;
 }
 
-.section1 button:hover{
-  background-color: #5c7f87;
+.section1 button:hover {
+    background-color: #5c7f87;
 }
-.section1 h2{
+
+.section1 h2 {
     font-size: 60px;
     padding: 0px;
     margin: 15px 23px;
 }
-.section1 h3{
+
+.section1 h3 {
     font-size: 40px;
     padding: 0px;
     margin: 15px 23px;
 }
-.navbar a{
+
+.navbar a {
     color: black;
     text-decoration: none;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     text-decoration: underline;
 }
 
-.section{
+.section {
     margin: 20px;
     padding: 20px;
     transition: transform 0.3s ease;
 }
 
-.section{
+.section {
     padding: 20px;
     margin: 40px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    list-style: none; 
+    list-style: none;
 }
 
 .section:hover {
     transform: scale(1.02);
 }
 
-.section h2{
+.section h2 {
     color: #0a0d3f;
     font-size: 30px;
 }
@@ -123,10 +133,12 @@ body{
     width: 90%;
     padding: 60px;
 }
-#features img{
+
+#features img {
     width: 800px;
 }
-.feature-grid{
+
+.feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -141,20 +153,22 @@ body{
     font-size: 16px;
     gap: 20px;
 }
+
 .feature-heading {
     display: block;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 8px;
 }
-.box1{
+
+.box1 {
     background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
     border-radius: 20px;
     /* border: 3px solid black; */
-        box-shadow: 3px 1px;
+    box-shadow: 3px 1px;
     transition: transform 0.3s ease;
     animation: appear linear;
     animation-timeline: view();
@@ -162,8 +176,8 @@ body{
 
 }
 
-.box2{
-     background-color: rgb(235, 247, 171);
+.box2 {
+    background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
@@ -176,8 +190,9 @@ body{
     animation-range: entry 0% cover 40%;
 
 }
-.box3{
-     background-color: rgb(235, 247, 171);
+
+.box3 {
+    background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
@@ -190,8 +205,9 @@ body{
     animation-range: entry 0% cover 40%;
 
 }
-.box4{
-     background-color: rgb(235, 247, 171);
+
+.box4 {
+    background-color: rgb(235, 247, 171);
     width: 220px;
     height: 203px;
     padding: 20px;
@@ -203,18 +219,21 @@ body{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
-@keyframes appear{
-    from{
+
+@keyframes appear {
+    from {
         /* opacity: 0; */
         transform: translateX(-100%);
 
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-.newone{
+
+.newone {
     padding: 10px;
     display: flex;
 }
@@ -223,93 +242,97 @@ body{
     transform: scale(1.05);
 }
 
-.feature-items strong{
+.feature-items strong {
     font-size: 100px;
     color: white;
     color: var(--accent)
 }
 
 #why-us {
-  padding: 60px;
-  background-color: #d4d7ff;
-  border-radius: 16px;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 40px;
+    padding: 60px;
+    background-color: #d4d7ff;
+    border-radius: 16px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
 }
-.keyfeature{
+
+.keyfeature {
     background-color: rgb(255, 255, 197);
 }
-.newfeature{
+
+.newfeature {
     font-size: 80px;
     text-align: center;
     margin: 20px 0px;
     padding: 0px;
 
 }
-.newfeature h1{
+
+.newfeature h1 {
     background: linear-gradient(red, blue);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     top: 30px;
 }
 
 #why-us ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
 }
 
 #why-us li {
-  margin-bottom: 13px;
-  font-size: 1.05rem;
-  position: relative;
-  padding-left: 24px;
+    margin-bottom: 13px;
+    font-size: 1.05rem;
+    position: relative;
+    padding-left: 24px;
 }
 
 #why-us li::before {
-  position: absolute;
-  left: 0;
-  color: var(--accent);
+    position: absolute;
+    left: 0;
+    color: var(--accent);
 }
 
 
 
 .faq-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.faq-item{
-  background-color: #5c7f87;
-  border-left: 5px solid #0a0d3f;
-  color: white;
-  border-radius: 12px;
-  padding: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+.faq-item {
+    background-color: #5c7f87;
+    border-left: 5px solid #0a0d3f;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-.faq-item[open]{
-  transform: scale(1.01);
+.faq-item[open] {
+    transform: scale(1.01);
 }
 
-.faq-item p{
-  font-weight: bold;
-  /* font-size: 18px; */
+.faq-item p {
+    font-weight: bold;
+    /* font-size: 18px; */
 }
 
 
-footer{
+footer {
     padding: 20px 70px;
     background-color: #0a0d3f;
     color: white;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -327,31 +350,31 @@ footer{
 
 .footer-content a {
     text-decoration: none;
-    color:rgb(172, 172, 224);
+    color: rgb(172, 172, 224);
 }
 
 
 .newsletter input {
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  margin-right: 10px;
-  width: 250px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    width: 250px;
 }
 
 .newsletter button {
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: var(--accent);
-  color: white;
-  border: 1px solid white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--accent);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .newsletter button:hover {
-  background-color: #3b36c6;
+    background-color: #3b36c6;
 }
 
 
@@ -413,8 +436,8 @@ body.loginbody {
     border-radius: 40px;
     cursor: pointer;
     box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
-                rgb(246, 84, 174) 0px 0px 0px 4px,
-                rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+        rgb(246, 84, 174) 0px 0px 0px 4px,
+        rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
     transition: transform 0.3s ease;
 }
 
@@ -442,31 +465,34 @@ body.loginbody {
 .registerlink:active {
     color: aqua;
 }
-.backgroundvid{
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    min-width: 100vw; 
-    min-height: 100vh; 
-    width: auto; 
-    height: auto; 
-    z-index: -1; 
-    transform: translate(-50%, -50%); 
+
+.backgroundvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
     overflow-y: hidden;
     overflow-x: hidden;
     object-fit: contain;
 }
-.mail{
+
+.mail {
     display: flex;
     gap: 20px;
 }
-.password{
+
+.password {
     display: flex;
     gap: 20px;
 }
 
 
-.pricingbox1{
+.pricingbox1 {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -477,7 +503,8 @@ body.loginbody {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     height: 260px;
 }
-.pricingbox2{
+
+.pricingbox2 {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -488,7 +515,8 @@ body.loginbody {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     height: 260px;
 }
-.pricingbox3{
+
+.pricingbox3 {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -499,7 +527,8 @@ body.loginbody {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     height: 260px;
 }
-.pricingbox4{
+
+.pricingbox4 {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -510,7 +539,8 @@ body.loginbody {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     height: 260px;
 }
-.pricingbox5{
+
+.pricingbox5 {
     width: 400px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -522,21 +552,27 @@ body.loginbody {
     height: 260px;
 }
 
-body.pricing{
+body.pricing {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     overflow: wrap;
     flex-wrap: wrap;
     margin-top: 20px;
 }
-.pricingbox1,.pricingbox2,.pricingbox3,.pricingbox4,.pricingbox5{
+
+.pricingbox1,
+.pricingbox2,
+.pricingbox3,
+.pricingbox4,
+.pricingbox5 {
     text-align: center;
 }
-.buybtn{
+
+.buybtn {
     background-color: blue;
     border: 3px solid red;
     width: 200px;
@@ -546,9 +582,10 @@ body.pricing{
     transition: transform 0.4s ease;
     font-weight: bold;
     font-size: 20px;
-    
-    
+
+
 }
-.buybtn:hover{
+
+.buybtn:hover {
     transform: scale(1.2);
 }
